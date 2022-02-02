@@ -25,5 +25,8 @@ setup(
             'challenge-2 = nlp_logix_challenge.challenge2:run',
             'challenge-5 = nlp_logix_challenge.challenge5:run',
         ],
+    },
+    package_data={
+        'nlp_logix_challenge': ['Data/*', 'Data/iris_date/*'],
     }
 )
