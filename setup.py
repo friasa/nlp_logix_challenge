@@ -27,6 +27,6 @@ setup(
         ],
     },
     package_data={
-        'nlp_logix_challenge': ['Data/*', 'Data/iris_date/*'],
+        'nlp_logix_challenge': ['Data/*', 'Data/iris_data/*'],
     }
 )
