@@ -1,0 +1,2 @@
+include nlp_logix_challenge/Data/*
+include nlp_logix_challenge/Data/iris_data/*

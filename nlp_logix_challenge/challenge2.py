@@ -9,6 +9,7 @@ from sklearn import metrics
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.model_selection import train_test_split
 import pandas as pd
+import os
 
 
 def run():
@@ -20,8 +21,9 @@ def classify(filename) -> None:
              'petal_length', 'petal_width',
              'class']
 
-    df = pd.read_csv('nlp_logix_challenge/Data/iris_data/iris.data',
-                     names=attrs)
+    data_file = os.path.join(os.path.dirname(os.path.realpath(__file__)),
+                             'Data/iris_data/iris.data')
+    df = pd.read_csv(data_file, names=attrs)
 
     # Mapping to numbers so we can classify
     mapping = {'Iris-setosa': 1,

@@ -6,11 +6,14 @@
     Python Version: 3.7
 """
 import pandas as pd
+import os
+
 
 def run():
     # City of Pittsburgh Playground Equipment Data
-    df = read_csv('nlp_logix_challenge/Data/'
-                  'e39ef76e-0a11-47c8-a86f-a37f55db7a2b.csv')
+    file_path = os.path.join(os.path.dirname(os.path.realpath(__file__)),
+                             'Data/e39ef76e-0a11-47c8-a86f-a37f55db7a2b.csv')
+    df = read_csv(file_path)
     print_info(df)
     combine_columns(df)
 
